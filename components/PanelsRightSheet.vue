@@ -4,6 +4,7 @@
       <CrossIcon />
     </button>
     <div class="right-sheet__wrapper">
+      <span class="right-sheet__category">{{ category }}</span>
       <p class="right-sheet__title">Title: {{ title }}</p>
       <p class="right-sheet__intro">Intro: {{ intro }}</p>
       <ul class="right-sheet__details">
