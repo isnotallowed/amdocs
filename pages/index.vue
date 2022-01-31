@@ -50,7 +50,6 @@ export default {
         }
       }
     })
-    console.log(data)
     this.panels = data
   },
   methods: {
@@ -73,12 +72,25 @@ export default {
 <style lang="scss" scoped>
 .panels {
   max-width: 1240px;
+  padding: 1rem;
   margin: 0 auto;
   &__wrapper {
-    margin-top: 3rem;
     display: grid;
-    grid-template-columns: 1fr 1fr 1fr 1fr;
     grid-gap: 2rem;
+  }
+}
+@media (max-width: 768px) {
+  .panels {
+    &__wrapper {
+      grid-template-columns: 1fr;
+    }
+  }
+}
+@media (min-width: 768px) {
+  .panels {
+    &__wrapper {
+      grid-template-columns: 1fr 1fr 1fr 1fr;
+    }
   }
 }
 .slide-enter-active {

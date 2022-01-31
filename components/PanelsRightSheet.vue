@@ -53,7 +53,6 @@ export default {
 <style scoped lang="scss">
 .right-sheet {
   height: 100vh;
-  width: 400px;
   position: fixed;
   top: 0;
   right: 0;
@@ -105,6 +104,16 @@ export default {
     &:hover {
       color: #3a7ee2;
     }
+  }
+}
+@media (max-width: 768px) {
+  .right-sheet {
+    width: 100%;
+  }
+}
+@media (min-width: 768px) {
+  .right-sheet {
+    width: 400px;
   }
 }
 </style>
